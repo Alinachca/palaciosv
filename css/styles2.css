@@ -1,0 +1,451 @@
+body {   
+    background-color: #242323;
+    color: #ffffff; /* Text color */   
+    font-family: Arial, sans-serif;
+}
+header, nav, section, footer {
+    padding: 20px;
+}
+header h1, footer p {
+    text-align: center;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff; /* Link color */
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+header h1 {
+    font-size: 21px; /* Adjust the font size as needed */
+}
+.logo {
+    width: 150px;
+    height: auto;
+    margin: 10px; /* Adjust margin as needed */
+    position: absolute;
+    top: 15px;
+    right  : 530px;
+}
+.centered-image {
+    width: 70%; /* Заменяем максимальную ширину на конкретное значение, чтобы увеличить изображение */
+    height: auto; /* Сохраняем пропорции изображения */
+    display: block;
+    margin: auto;
+}
+.about-section {
+    text-align: center; /* Выравниваем текст по центру в секции */
+}
+.centered-content {
+    max-width: 950px;
+    margin: 0 auto;
+}
+.testimonial-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.testimonial-buttons .button {
+    font-size: 12px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    outline: 2px solid #b3a59d ;
+    outline-offset: 0px;
+    background: #b3a59d ;
+    border: 0;
+    font-weight: bolder;
+    color: white;
+    transition: all .1s ease-in-out;
+    cursor: pointer;
+}
+.testimonial-buttons .button:hover {
+    outline-offset: 3px;
+    outline: 3px solid #b3a59d;
+}
+
+ .language-buttons {
+    display: flex;
+    justify-content: flex-end; /* Выравнивание кнопок по правому краю */
+    padding: -5px;
+  
+}
+.language-buttons button {
+    font-size: 14px;
+    color: #e1e1e1;
+    font-family: inherit;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+    margin-left: 10px;
+	right  : -540px;
+}
+
+.language-buttons button:focus,
+.language-buttons button:hover {
+    color: #fff;
+}
+
+.language-buttons button:focus:after,
+.language-buttons button:hover:after {
+    width: 100%;
+    left: 0%;
+}
+        .language-buttons button:after {
+            content: "";
+            pointer-events: none;
+            bottom: -10px;
+            left: 50%;
+            position: absolute;
+            width: 0%;
+            height: 2px;
+            background-color: #fff;
+            transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+            transition-duration: 400ms;
+            transition-property: width, left;
+        }
+.language-buttons {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            top: 35px;
+            right: 765px;
+        }
+
+ .button {
+            font-size: 12px; /* Уменьшение размера шрифта */
+            padding: 8px 15px; /* Уменьшение размера кнопки */
+            border-radius: 5px;
+            outline: 2px solid #938676;
+            outline-offset: 0px;
+            background: #938676;
+            border: 0;
+            font-weight: bolder;
+            color: white;
+            transition: all .1s ease-in-out;
+            cursor: pointer;
+			margin: -155px; /* Коррекция отступа */
+			margin-right: 10px; /* Добавлен отступ справа */
+			  
+			
+			
+        }
+        .button:hover {
+            outline-offset: 3px;
+            outline: 3px solid #938676;
+			
+        }
+
+       
+.centered-buttons {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end; /* Выровнять кнопки по правой стороне */
+            width: 100%;
+            padding-right: 200px; /* Добавить отступ справа */
+
+        
+}
+        
+
+ .menu {
+            display: flex; /* Use flexbox */
+            justify-content: center; /* Center items horizontally */
+            list-style-type: none;
+            padding: 0;
+        }
+        .menu li {
+            margin: 0 5px; /* Add space between menu items */
+        }
+        .menu button {
+            font-size: 16px;
+            color: #e1e1e1;
+            font-family: inherit;
+            font-weight: 100;
+            cursor: pointer;
+            position: relative;
+            border: none;
+            background: none;
+            text-transform: uppercase;
+            transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+            transition-duration: 400ms;
+            transition-property: color;
+        }
+        .menu button:focus,
+        .menu button:hover {
+            color: #fff;
+        }
+        .menu button:focus:after,
+        .menu button:hover:after {
+            width: 100%;
+            left: 0%;
+        }
+        .menu button:after {
+            content: "";
+            pointer-events: none;
+            bottom: -2px;
+            left: 50%;
+            position: absolute;
+            width: 0%;
+            height: 2px;
+            background-color: #fff;
+            transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+            transition-duration: 400ms;
+            transition-property: width, left;
+        }
+
+
+
+
+ .underline {
+    font-weight:  bold; /* Делает текст жирным */
+}
+
+.chocolate-classical-sans-regular {
+  font-family: "Chocolate Classical Sans", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+	p, h2, h1,h3{	
+ font-family: "Chocolate Classical Sans", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.centered {
+    font-weight:  bold; /* Делает текст жирным */
+}
+.bottom-image {
+    display: flex;
+    justify-content: center; /* Центрируем содержимое по горизонтали */
+    align-items: center; /* Центрируем содержимое по вертикали */
+    height: 250px; /* Задаем высоту для секции, чтобы изображение не было слишком растянутым */
+}
+.image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        .image-gallery img {
+            width: 30%;
+            height: auto;
+        }
+
+.image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        .image-gallery img {
+            width: 30%;
+            height: auto;
+        }
+.image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        .image-gallery img {
+            width: 30%;
+            height: auto;
+        }
+
+
+
+.wrapper {
+            display: inline-flex;
+            list-style: none;
+            height: 120px;
+            width: 100%;
+            padding-top: 40px;
+            font-family: "Poppins", sans-serif;
+            justify-content: center;
+			 margin-bottom: 40px;
+            margin-top: -50px; /* Поднять .wrapper выше */
+			
+        }
+
+        .wrapper .icon {
+            position: relative;
+            background: #fff;
+            border-radius: 50%;
+            margin: 10px;
+            width: 50px;
+            height: 50px;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+			
+        }
+
+
+        .wrapper .tooltip {
+            position: absolute;
+            top: 0;
+            font-size: 14px;
+            background: #fff;
+            color: #fff;
+            padding: 5px 8px;
+            border-radius: 5px;
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            pointer-events: none;
+            transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+
+        .wrapper .tooltip::before {
+            position: absolute;
+            content: "";
+            height: 8px;
+            width: 8px;
+            background: #fff;
+            bottom: -3px;
+            left: 50%;
+            transform: translate(-50%) rotate(45deg);
+            transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+
+        .wrapper .icon:hover .tooltip {
+            top: -45px;
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+        }
+
+        .wrapper .icon:hover span,
+        .wrapper .icon:hover .tooltip {
+            text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+        }
+
+        .wrapper .whatsapp:hover,
+        .wrapper .whatsapp:hover .tooltip,
+        .wrapper .whatsapp:hover .tooltip::before {
+            background: #25d366;
+            color: #fff;
+        }
+
+        .wrapper .telegram:hover,
+        .wrapper .telegram:hover .tooltip,
+        .wrapper .telegram:hover .tooltip::before {
+            background: #0088cc;
+            color: #fff;
+        }
+
+        .wrapper .email:hover,
+        .wrapper .email:hover .tooltip,
+        .wrapper .email:hover .tooltip::before {
+            background: #ea4335;
+            color: #fff;
+        }
+		
+		
+
+       /* Стили для фоновых изображений и логотипов */
+.wrapper .whatsapp {
+    background-image: url("C:/Users/alina/OneDrive/Рабочий стол/сайт кватир/source/logowhatsapp.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper .telegram {
+    background-image: url("C:/Users/alina/OneDrive/Рабочий стол/сайт кватир/source/logotelegram.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper .email {
+    background-image: url("C:/Users/alina/OneDrive/Рабочий стол/сайт кватир/source/logoemail.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+        .wrapper .icon span {
+            position: absolute;
+            color: #fff;
+        }
+.wrapper .phone:hover,
+.wrapper .phone:hover .tooltip,
+.wrapper .phone:hover .tooltip::before {
+    background-color: #1E90FF; /* Цвет фона при наведении */
+    color: #fff ; /* Цвет текста при наведении */
+}
+
+.wrapper .phone {
+    background-image: url("C:/Users/alina/OneDrive/Рабочий стол/сайт кватир/source/logomoba.jpg"); /* Путь к изображению логотипа */
+    background-size: cover; /* Растягиваем изображение на всю кнопку */
+    background-position: center; /* Центрируем изображение */
+    border-radius: 50%; /* Делаем круглый фон */
+	 background-color: #1E90FF; /* Цвет фона для кнопки телефона */
+}
+
+p.underline {
+    font-size: 1.2em; /* Увеличьте размер текста по вашему желанию */
+}
+
+ .footer-image {
+    display: block;
+    margin: 0 auto;
+    max-width: 250px; /* Установите маленький размер для изображения */
+    height: auto;
+}
+
+#language-selection {
+    display: flex;
+    justify-content: flex-end;
+    margin: 40px;
+    margin-right: 5px;
+}
+
+.language-button {
+    font-size: 12px;
+    color: #e1e1e1; /* Цвет текста */
+    font-family: inherit;
+    font-weight: 100;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+    margin: 0 5px; /* Отступы между кнопками */
+    padding: 2px 8px; /* Отступы внутри кнопки */
+}
+
+.language-button:hover,
+.language-button.active {
+    color: #ffffff; /* Цвет текста при наведении или активации */
+}
+
+.language-button::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background: #ff0000; /* Цвет линии */
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* Расположение линии под кнопкой */
+    transition: width 0.3s ease;
+}
+
+.language-button.active::after {
+    width: 100%;
+}
+
+	

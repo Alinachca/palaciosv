@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palacios Properties</title>
+    <link rel="stylesheet" href="../css/styles1.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img class="logo" src="../source/logo12.jpg" alt="Logo" />
+            <h1 class="centered "></h1>
+           <!-- Переносим кнопки внутрь контейнера -->
+           <div id="language-selection">
+            <button  id="spanish-button" class="language-button" onclick="changeLanguage('es')">EN</button>
+            <button   id="english-button" class="language-button" onclick="changeLanguage('en')">ES</button>
+            <button   id="russian-button" class="language-button" onclick="changeLanguage('ru')">RU</button>
+        </div>
+		 
+		
+		
+		
+		
+ <!-- Новые кнопки -->
+		<div class="centered-buttons">
+                <button class="button write-to-us-button" onclick="submitRequest()" id="solicitudBtn">Enviar solicitud</button>
+				 </div>
+      <nav>
+    <ul class="menu">
+	  <li><button onclick="handleClick('sobre-nosotros')" id="sobre-nosotrosBtn">Sobre nosotros</button></li>
+            <li><button onclick="handleClick('galeria')" id="proyectosBtn">Galeria </button></li>
+            <li><button onclick="handleClick('resenas-de-fotos')" id="galeriaBtn">Proyectos</button></li>
+            <li><button onclick="handleClick('sobre-nuestros-servicios')" id="sobre-nuestros-serviciosBtn">Sobre nuestros servicios</button></li>
+            <li><button onclick="handleClick('contactos')" id="contactosBtn">Contactos</button></li>
+        </ul>
+	
+               
+    </ul>
+</nav>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wdth@0,87.5;1,87.5&display=swap" rel="stylesheet">
+    <section>
+        <!-- Добавляем новую картинку -->
+        <img class="centered-image" src="C:\Users\alina\OneDrive\Рабочий стол\сайт кватир\source\photo2.jpg" alt="Centered Image">
+        <section class="about-section">
+            <div class="centered-content">
+                <h2 class="centered"style="font-size: 30px; margin-bottom: -40px; margin-left: 10px;  color:#AF9562;" id="sobrenosotros1Btn">Sobre nosotros</h2>
+            </div>
+        </section>
+	   <footer>
+    <div class="centered-content">
+        <div class="footer-text-column right-align">
+ 
+            <p style="font-size: 14px;  margin-bottom: 5px;margin-left: -20px; word-spacing: 5px;" id="sobreno1Btn">Somos consultores con enfoque humano en el mundo inmobiliario. Con +10 años de experiencia en</p> 
+			<p style="margin-left: 50px; margin-bottom: 5px; font-size: 15px; word-spacing: 5px;" id="sobrnBtn"> sector inmobiliario: compra,home staging, alquiler,reforma, alquiler vacacional. Desde alquileres  </p>
+			 <p style="font-size: 15px;  margin-bottom: 5px;margin-left: -20px; word-spacing: 5px;" id="sobrno2Btn"></p> 
+			<p style="margin-left: -25px;   font-size: 15px;margin-bottom: 5px; word-spacing: 5px;" id="sobBtn">y compras hasta servicios  de reforma,nuestro equipo  está aquí para brindarte una experiencia inmobiliaria</p>
+			 <p style="font-size: 15px;  margin-bottom: 5px;margin-left: 55px; word-spacing: 5px;" id="sob3Btn">  integral y sin complicaciones. Le guiamos paso a paso en el camino hacia su vivienda idónea.</p> 
+            <p style="font-size: 15px;  margin-bottom: 5px; margin-left: 20px;word-spacing: 5px;" id="sob9Btn"> </p>
+		    <p style="font-size: 15px;  margin-bottom: 5px;margin-left: -35px; word-spacing: 5px;" id="sso1Btn">Nos especializamos en ofrecer servicios integrales para aquellos que desean alquilar comprar o reformar </p> 
+			 <p style="font-size: 15px;  margin-bottom: 5px;margin-left: -20px; word-spacing: 5px;" id="s99Btn">propiedades en la hermosa región de la Comunidad Valenciana.</p> 
+          
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+   <footer>
+    <div class="centered-content">
+        <div class="footer-text-column right-align">
+		     <p class="footer-text larger" style="font-size: 18px;text-align: center;  margin-left: -20px;margin-bottom: 10px;word-spacing: 8px;" id="logrosBtn">• Logros +200 clientes satisfechos y felices con sus propiedades.</p>
+			  </div>
+            <p class="footer-text larger" style="font-size: 25px; text-align: center; margin-bottom: -10px; margin-left: 25px; color:#938676 ;" id="ventajasBtn">Ventajas </p>
+        </div>
+    </div>  
+</footer>
+	
+   <div class="footer-text-container">
+        <div class="footer-text-block">
+            <p class="footer-text larger" style="font-size: 15px;color: #AF9562;" id="auydaBtn">✓ Auyda con la búsqueda de vivienda</p>
+            <p class="footer-text larger"  style="font-size: 15px;color:  #AF9562;" id="enfoqueBtn">✓ Enfoque a las necesidades personales</p>
+            <p class="footer-text larger"  style="font-size: 15px;color:  #AF9562;" id="resoluciónBtn">✓ Resolución de preguntas relacionadas con el proceso de compra</p>
+            <p class="footer-text larger"  style="font-size: 15px;color:  #AF9562;" id="análisisBtn">✓ Análisis de rentabilidad de vivienda en caso de una inversión</p>
+        </div>
+        <div class="footer-text-block">
+            <p class="footer-text larger" style="font-size: 15px;color:  #AF9562;" id="gestiónBtn">✓ Gestión de proceso de compra y pago de impuestos</p>
+            <p class="footer-text larger"  style="font-size: 15px;color: #AF9562;" id="experienciaBtn">✓ Experiencia local de más de 10 años</p>
+            <p class="footer-text larger"  style="font-size: 15px;color: #AF9562;" id="serviciosBtn">✓ Servicios en varios idiomas (inglés, español, alemán, ruso)</p>
+        </div>
+    </div>
+
+    
+	
+	
+	
+	
+	<section class="bottom-image">
+        <img src="C:\Users\alina\OneDrive\Рабочий стол\сайт кватир\source\photo43.jpg" alt="Bottom Image" class="bottom-image" >
+    </section>
+	 
+
+		<footer>
+    <div class="centered-content">
+        <div class="footer-text-column right-align">
+            <p class="footer-text larger" style="font-size: 30px; text-align: center; margin-bottom: 20px; margin-left: 15px; color:  #938676;"  id="sobre13Btn">Sobre nuestros servicios </p>
+			 </div>
+            <p style="font-size: 16px;  margin-bottom: 5px;margin-left: -20px; word-spacing: 5px;" id="ofreceBtn">•Le ofrecemos una información práctica y conocimiento de mercado para aportarle una visión</p> 
+			<p style="margin-left: 10px; margin-bottom: 5px; font-size: 16px; word-spacing: 5px;" id="multidBtn"> multidimensional del sector. </p>
+			<p style="margin-left: -15px;   font-size: 16px;margin-bottom: 5px; word-spacing: 5px;" id="ayudaBtn">•Le ayudamos a diseñar, gestionar, invertir y planificar para crear soluciones y cubrir todos los</p>
+            <p style="font-size: 16px;  margin-bottom: 20px; margin-left: 20px;word-spacing: 5px;" id="aspesBtn">  aspectos que abarca el sector inmobiliario. </p>
+		
+          
+        </div>
+    </div>
+</footer>
+		
+		 
+		
+		
+		
+    <footer>
+	
+		<div class="centered-content">
+		 <div class="footer-text-column">
+    <p class="footer-text larger" style="font-size: 25px;  text-align: center;margin-bottom: 10px;margin-left: 0px;color:  #AF9562;" id="alquilerBtn">Alquiler de Propiedades:</p>
+	</div>
+	<div class="text-block">
+	  <img src="C:/Users/alina/OneDrive/Рабочий стол/сайт кватир/source/иконка1111111.jpg"  alt="Icono" >
+	 </div>
+
+	
+	 
+	         <div class="container">
+             <div class="text-column left-column">
+	   <p style="margin-right:-250px;  font-size: 16px; word-spacing: 3px; margin-bottom: 1px;" id="hacemosBtn">•Hacemos una búsqueda  según </p>
+	    <p style="margin-right: -260px; font-size: 16px;word-spacing: 3px; margin-bottom: 1px;" id="presupuestoBtn">presupuesto, zona </p>  
+	   <p style="margin-left: 15px; font-size: 16px;word-spacing: 3px; margin-bottom: 20px;" id="deseadasBtn">y características deseadas. </p> 
+	   
+	   <p style="margin-left: 10px; font-size: 16px;word-spacing: 7px; margin-bottom: 1px;" id="ademásBtn">Además, brindamos </p>  
+	   <p style="margin-right: -225px; font-size: 16px;word-spacing: 7px; margin-bottom: 1px;" id="expertoBtn">asesoramiento experto sobre </p>
+ 	  <p style="margin-right: -465px; font-size: 16px;word-spacing: 7px; margin-bottom: 1px;" id="arrendamientoBtn">contratos de arrendamiento,
+      <p style="margin-left: 15px; font-size: 16px; margin-bottom: 1px;word-spacing: 7px;" id="derechos777Btn"> derechos y obligaciones del </p>   
+	  <p style="margin-right: -465px; font-size: 16px;word-spacing: 7px; margin-bottom: 1px;" id="obligacionesBtn">  inquilino,  y cualquier otro </p>  
+<p style="margin-right: -465px; font-size: 16px; margin-bottom: 1px;word-spacing: 7px;" id="cualquier1Btn">aspecto  relacionado con el</p> 
+<p style="margin-left: 20px; font-size: 16px; margin-bottom: 1px;word-spacing: 7px;" id="procesoBtn"> proceso de alquiler. </p> 
+ </p>  
+		</div>
+
+    </div>
+</footer>
+
+
+</footer>
+
+
+   <footer>
+    <div class="centered-content">
+        <div class="footer-text-column right-align">
+            <p class="footer-text larger" style="font-size: 25px; text-align: center; margin-bottom: 10px;color:  #AF9562;" id="compraBtn">Compra de Propiedades:</p>
+	 </div>
+	 <div class="text-block">
+	 <img src="C:/Users/alina/OneDrive/Рабочий стол/сайт кватир/source/иконка1222222.jpg" alt="Ícono de Propiedades" class="footer-image" style="margin-right: 30px;">
+</div>
+	    <div class="container">
+      <div class="text-column left-column">
+            <p style="margin-right: -255px; font-size: 16px; margin-bottom: 1px;word-spacing: 3px;" id="deseanBtn">•Para aquellos que desean </p>
+            <p style="word-spacing: 3px; margin-right: -265px; font-size: 16px;" id="establecerseBtn">establecerse permanentemente </p>
+            <p style="word-spacing: 3px; margin-right: -265px; font-size: 16px;" id="ofrecemosBtn">en la Comunidad Valenciana, </p>
+            <p style="word-spacing: 3px; margin-right: -255px; font-size: 16px;" id="completoBtn">ofrecemos un servicio completo </p>
+            <p style="word-spacing: 3px; margin-right: -230px; font-size: 16px; margin-bottom: 20px;" id="propiedades1Btn">de compra de propiedades. </p>
+ 
+            <p style="margin-right: -475px; font-size: 16px; margin-bottom: 1px;word-spacing: 3px;" id="inicialBtn">Desde la búsqueda inicial hasta </p>
+            <p style="margin-right: -480px; font-size: 16px; margin-bottom: 1px;word-spacing: 3px;" id="cierreBtn">la negociación y cierre de la </p>
+            <p style="margin-right: -475px; font-size: 16px; margin-bottom: 1px;word-spacing: 3px;" id="estamosBtn">transacción, estamos dedicados </p>
+            <p style="margin-right: -475px; font-size: 16px; margin-bottom: 1px;word-spacing: 3px;" id="idealBtn">a encontrar la propiedad ideal   </p>
+            <p style="margin-right: -480px; font-size: 16px; margin-bottom: 1px;word-spacing: 3px;" id="cumplaBtn">que cumpla con las expectativas  </p> 
+			<p style="margin-right: -480px; font-size: 16px; margin-bottom: 20px;word-spacing: 3px;" id="nuestros12Btn">de nuestros clientes.</p>
+		
+           <p style="margin-right: -475px; font-size: 16px; margin-bottom: 1px;word-spacing: 3px;" id="equipoBtn">Nuestro equipo proporciona </p>
+            <p style="margin-right: -475px; font-size: 16px; margin-bottom: 1px;word-spacing: 3px;" id="experto12Btn">asesoramiento experto sobre el  </p>
+            <p style="margin-right: -475px; font-size: 16px; margin-bottom: 1px;word-spacing: 3px;" id="evaluaciónBtn">mercado inmobiliario local, así </p>
+            <p style="margin-right: -480px; font-size: 16px; margin-bottom: 1px;word-spacing: 3px;" id="trámitesBtn">como evaluación de    </p> 
+			<p style="margin-left: 30px; font-size: 16px; margin-bottom: 1px;word-spacing: 3px;" id="financierosBtn">legales y propiedades, trámites   </p> 
+			<p style="margin-left: 30px; font-size: 16px; margin-bottom: 20px;word-spacing: 3px;" id="financieros888Btn">financieros.</p>
+			
+            <p style="margin-right: -485px; font-size: 16px; margin-bottom: 1px;word-spacing: 3px;" id="garantizamosBtn">De esta forma le garantizamos  </p>
+            <p style="margin-right: -485px; font-size: 16px; margin-bottom: 1px;word-spacing: 3px;"  id="estrésBtn"> una experiencia sin estrés  </p> 
+			<p  style="margin-left: 35px; font-size: 16px; margin-bottom: 1px;word-spacing: 3px;" id="proceso121Btn" >durante todo el  proceso de </p>
+			<p  style="margin-left: 35px; font-size: 16px; margin-bottom: 1px;word-spacing: 3px;" id="duranteBtn">compra.</p>
+            <p>  </p>
+			 
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+ <footer>                                                
+    <div class="centered-content">
+<div class="footer-text-column">
+         <p class="footer-text larger" style="font-size: 25px; text-align: center; margin-bottom: 10px;color:  #AF9562;" id="reformaBtn">Reforma de Propiedades:</p>
+		  </div>
+		   <div class="text-block">
+		  <img src="C:/Users/alina/OneDrive/Рабочий стол/сайт кватир/source/иконка1333333.jpg" alt="Ícono de Reforma" class="footer-image"  style="margin-right: 30px;">
+		  </div>
+		 <div class="container">
+        <div class="text-column left-column">
+           <p style="margin-right: -260px; font-size: 16px; margin-bottom: 1px;word-spacing: 3px;" id="además1222Btn">•Además de ayudarle a </p>
+            <p style="word-spacing: 3px; margin-right: -275px; font-size: 16px;" id="tambiénBtn">encontrar la propiedad perfecta, </p>
+            <p style="word-spacing: 3px; margin-right: -275px; font-size: 16px;" id="erviciosBtn">también ofrecemos servicios </p>
+            <p style="word-spacing: 3px; margin-right: -265px; font-size: 16px;" id="cualquierBtn">completos de reforma para </p>
+            <p style="word-spacing: 3px; margin-right: -245px; font-size: 16px; margin-bottom: 1px;" id="necesidadesBtn">transformar cualquier espacio </p>
+			 <p style="word-spacing: 3px; margin-right: -495px; font-size: 16px; margin-bottom: 20px;" id="gustosBtn"> según sus necesidades y gustos.</p>
+ 
+            <p style="margin-right: -485px; font-size: 16px; margin-bottom: 1px;word-spacing: 3px;" id="seaBtn">Ya sea una renovación </p>
+            <p style="margin-right: -490px; font-size: 16px; margin-bottom: 1px;word-spacing: 3px;" id="alizaciónBtn">completa o una actualización </p>
+            <p style="margin-right: -485px; font-size: 16px; margin-bottom: 1px;word-spacing: 3px;" id="profesionalesBtn">parcial, nuestro equipo de </p>
+            <p style="margin-right: -485px; font-size: 16px; margin-bottom: 1px;word-spacing: 3px;" id="desdeBtn">profesionales cualificados se   </p>
+            <p style="margin-right: -490px; font-size: 16px; margin-bottom: 1px;word-spacing: 3px;" id="hastaBtn">encarga de cada detalle, desde  </p> 
+			<p style="margin-right: -485px; font-size: 16px; margin-bottom: 1px;word-spacing: 3px;" id="proyectoBtn">el diseño inicial hasta la</p>
+			<p style="margin-right: -485px; font-size: 16px; margin-bottom: 1px;word-spacing: 3px;" id="sea111Btn">ejecución y la finalización del</p>
+           <p style="margin-right: -485px; font-size: 16px; margin-bottom: 20px;word-spacing: 3px;" id="alización111Btn"> proyecto.</p>
+		
+           <p style="margin-right: -480px; font-size: 16px; margin-bottom: 1px;word-spacing: 3px;" id="brindarteBtn">Nos comprometemos a </p>
+            <p style="margin-right: -480px; font-size: 16px; margin-bottom: 1px;word-spacing: 3px;" id="resultadosBtn">brindarte resultados  </p>
+            <p style="margin-right: -485px; font-size: 16px; margin-bottom: 1px;word-spacing: 3px;" id="superenBtn"> excepcionales que superen sus</p>
+            <p style="margin-right: -485px; font-size: 16px; margin-bottom: 1px;word-spacing: 3px;" id="transformenBtn">expectativas y transformen su    </p> 
+			<p style="margin-left: 35px; font-size: 16px; margin-bottom: 1px;word-spacing: 3px;" id="sueños1Btn">propiedad en el hogar de sus   </p> 
+			<p style="margin-left: 40px; font-size: 16px; margin-bottom: 20px;word-spacing: 3px;" id="sueños1666Btn">sueños.</p>
+			
+            
+ </div>
+    </div>
+</footer>
+
+			 
+ </div>
+    </div>
+</footer>
+
+
+    
+      
+		
+	 <section class="about-section">
+            <div class="centered-content">
+                <h2 class="centered"id="reseñasBtn" style="color:#AF9562;">Reseñas de clientes reales   </h2>
+            </div>
+			 <div class="testimonial">
+            <p id="testimonialText"></p>
+			<!-- Используем стилизованные кнопки -->
+			<div class="testimonial-buttons">
+            <button class="button" id="prevButton" onclick="prevTestimonial()" >←ANTERIOR</button>
+            <button class="button" id="nextButton" onclick="nextTestimonial()">SIGUIENTE →</button>
+        </div>
+        </section>
+		
+	<section class="about-section">
+            <div class="centered-content">
+			   <div class="contact-item">
+            <h2 class="centered large-text" style="font-size: 30px; margin-right: -35px;" id="yyontactosBtn" >Contactos</h2>
+			
+	
+	
+		<section class="wrapper" >
+        <div class="icon whatsapp"onclick="callWhatsApp()" >
+            <div class="tooltip" >WhatsApp</div>
+            <span><i class="fab fa-whatsapp"></i></span>
+        </div>
+		
+        <div class="icon telegram" onclick="openTelegram()" >
+            <div class="tooltip">Telegram</div>
+            <span><i class="fab fa-telegram-plane"></i></span>
+        </div>
+		
+        <div class="icon email" onclick="sendEmail()" >
+            <div class="tooltip">Email</div>
+            <span><i class="fas fa-envelope"></i></span>
+        </div>
+		
+		<div class="icon phone" onclick="callUs()" >
+        <div class="tooltip">Телефон</div>
+        <span><i class="fas fa-phone"></i></span>
+		 
+       
+    </div>
+</div>
+    </section>
+		
+    <script>
+	function changeLanguage(language) {
+        // Example translations
+        const translations = {
+          'es': {
+			'sobre-nosotrosBtn': 'Sobre nosotros',
+			'proyectosBtn': 'Galeria',
+            'galeriaBtn':' Proyectos',
+            'sobre-nuestros-serviciosBtn':'Sobre nuestros servicios',
+			'contactosBtn': 'contactos',
+			'sobrenosotros1Btn': 'Sobre nosotros',
+			'sobreno1Btn': 'Somos consultores con enfoque humano en el mundo inmobiliario. Con +10 años de experiencia en',
+			'sobrnBtn': ' sector inmobiliario: compra,home staging,alquiler,reforma, alquiler vacacional. Desde alquileres ',
+			'sobBtn': ' y compras hasta servicios de reforma,nuestro equipo  está aquí para brindarte una experiencia inmobiliaria',
+			'sob3Btn': ' integral y sin complicaciones. Le guiamos paso a paso en el camino hacia su vivienda idónea. ',
+			'sso1Btn': 'Nos especializamos en ofrecer servicios integrales para aquellos que desean alquilar comprar o reformar  ',
+		    's99Btn': 'propiedades en la hermosa región de la Comunidad Valenciana. ',	
+			'logrosBtn': 'Logros +200 clientes satisfechos y felices con sus propiedades. ',
+	        'ventajasBtn': 'Ventajas',
+			'auydaBtn': ' ✓ Auyda con la búsqueda de vivienda',
+            'enfoqueBtn': ' ✓ Enfoque a las necesidades personales',
+            'resoluciónBtn': ' ✓ Resolución de preguntas relacionadas con el proceso de compra',
+            'análisisBtn': ' ✓ Análisis de rentabilidad de vivienda en caso de una inversión',
+            'gestiónBtn': ' ✓ Gestión de proceso de compra y pago de impuestos',
+            'experienciaBtn': ' ✓ Experiencia local de más de 10 años',
+            'serviciosBtn': ' ✓ Servicios en varios idiomas (inglés, español, alemán, ruso)', 
+            'sobre13Btn': ' Sobre nuestros servicios ', 
+            'ofreceBtn': '•Le ofrecemos una información práctica y conocimiento de mercado para aportarle una visión ',
+			'multidBtn': 'multidimensional del sector. ',
+			'ayudaBtn': ' •Le ayudamos a diseñar, gestionar, invertir y planificar para crear soluciones y cubrir todos los  ',
+            'aspesBtn': '  aspectos que abarca el sector inmobiliario.',
+			'alquilerBtn': 'Alquiler de Propiedades:',
+			'hacemosBtn': ' •Hacemos una búsqueda  según ',
+	        'presupuestoBtn': 'presupuesto,zona  ',
+	        'deseadasBtn': 'y características deseadas.  ',
+			'ademásBtn': ' Además, brindamos ',  
+	        'expertoBtn': 'asesoramiento  experto sobre ',
+ 	        'arrendamientoBtn': 'contratos de arrendamiento,     ',  
+	        'derechos777Btn': 'derechos y  obligaciones del  ',
+            'obligacionesBtn ': 'inquilino, y cualquier otro   ',
+			'cualquier1Btn': 'aspecto relacionado con el  ',
+            'procesoBtn ': 'proceso de alquiler.  ',
+			'compraBtn': ' Compra de Propiedades:',
+			
+			'deseanBtn': ' •Para aquellos que desean ',
+            'establecerseBtn': 'establecerse permanentemente ',
+            'ofrecemosBtn': 'en la Comunidad Valenciana,',
+            'completoBtn': 'ofrecemos un servicio completo',
+            'propiedades1Btn': 'de compra de propiedades. ',
+			
+            'inicialBtn': ' Desde la búsqueda inicial hasta',
+            'cierreBtn': '  la negociación y cierre de la',
+            'estamosBtn': 'transacción, estamos dedicados',
+            'idealBtn': ' a encontrar la propiedad ideal',
+            'cumplaBtn': 'que cumpla con las expectativas ', 
+			'nuestros12Btn': 'de nuestros clientes. ',
+			
+		    'equipoBtn': ' Nuestro equipo proporciona ', 
+            'experto12Btn': 'asesoramiento experto sobre el ',
+            'evaluaciónBtn': 'mercado inmobiliario local, así   ',
+            'trámitesBtn': 'como evaluación de ',
+			'financierosBtn': ' legales y propiedades, trámites',
+			'financieros888Btn': ' financieros.',
+			
+			'garantizamosBtn': ' De esta forma le garantizamos  ', 
+            'estrésBtn': 'una experiencia  sin estrés   ', 
+			'proceso121Btn': 'durante todo el proceso ', 
+			'duranteBtn': 'de compra.',
+			
+
+			'reformaBtn': 'Reforma de Propiedades:',
+			'además1222Btn': ' •Además de ayudarle a  ',
+            'tambiénBtn': 'encontrar la propiedad perfecta, ',
+            'erviciosBtn': 'también ofrecemos servicios ',
+            'cualquierBtn': 'completos de reforma para ',
+            'necesidadesBtn': 'transformar cualquier espacio ',
+            'gustosBtn': 'según sus necesidades y gustos.',
+			
+            'seaBtn': ' Ya sea una renovación',
+            'alizaciónBtn': ' completa o una actualización  ',
+            'profesionalesBtn': 'parcial, nuestro equipo de ',
+            'desdeBtn': 'profesionales cualificados se ',
+            'hastaBtn': 'encarga de cada detalle, desde ',
+            'proyectoBtn': 'el diseño inicial hasta la ',
+			'sea111Btn': 'ejecución y la finalización del ',
+            'alización111Btn': ' proyecto. ',
+			
+            'brindarteBtn': ' Nos comprometemos a',
+            'resultadosBtn': ' brindarte resultados',
+            'superenBtn': '  excepcionales que superen sus',
+            'transformenBtn': 'expectativas y transformen su',
+            'sueños1Btn': 'propiedad en el hogar de sus ',
+			'sueños1666Btn': 'sueños. ',
+			
+        
+			
+			
+			
+		    'galeria12Btn': 'Galeria   ',
+		    'estudioBtn': 'Estudio en Menorca  ',
+			'apartamentoBtn': 'Apartamento en Menorca  ',
+			'valenciBtn': 'Apartamento en finca antigua en Valenci',
+			'reseñasBtn': 'Reseñas de clientes reales   ',
+		    'yyontactosBtn': 'Contactos ',
+			'prevButton': '←ANTERIOR',
+			'nextButton': 'SIGUIENTE →',
+			'solicitudBtn': 'Enviar solicitud',
+			
+ }, 
+          'en': {
+		  'sobre-nosotrosBtn': 'About us',
+		  'proyectosBtn': 'Gallery ',
+          'galeriaBtn':'Projects',
+          'sobre-nuestros-serviciosBtn':'About our services',
+		  'contactosBtn': 'contacts',
+		  'sobrenosotros1Btn': 'About us',
+		  'sobreno1Btn': 'We are consultants with a human approach in the real estate world. With over 10 years of experience in',
+		  'sobrnBtn': ' the real estate sector: buying, renting, home staging, renovation, and vacation rentals. From rentals  ',
+		  'sobBtn': 'and purchases to renovation services, our team is here to provide you with a comprehensive  and hassle-free',
+		  'sob3Btn': '  real estate experience. We guide you step by step on the path to your ideal home.',
+		  'sso1Btn': 'We specialize in offering comprehensive services for those who wish to rent, buy, or renovate  ',
+		  's99Btn': 'properties in the beautiful region of the Valencian Community. ',	
+		    'logrosBtn': 'Achievements: Over 200 satisfied and happy with their property customers. ',
+	        'ventajasBtn': 'Advantages',
+			'auydaBtn': ' ✓ Help with home search',
+            'enfoqueBtn': ' ✓ Focus on personal needs',
+            'resoluciónBtn': ' ✓ Resolution of questions related to the buying process',
+            'análisisBtn': ' ✓ Profitability analysis of properties for investment',
+            'gestiónBtn': ' ✓ Management of the purchase process and tax payments',
+            'experienciaBtn': ' ✓ Over 10 years of local experience',
+            'serviciosBtn': ' ✓ Services in multiple languages (English, Spanish, German, Russian)', 
+			'sobre13Btn': 'About Our Services ',
+           
+			
+			'alquilerBtn': 'Property Rental:',
+			'hacemosBtn': ' •We conduct searches based ',
+	        'presupuestoBtn': 'on budget, location, and  ',
+	        'deseadasBtn': ' desired features.  ',
+			'ademásBtn': ' Additionally, we provide ',  
+	        'expertoBtn': 'expert  advice on lease ',
+ 	        'arrendamientoBtn': 'agreements, tenant  rights   ',  
+	        'obligacionesBtn': 'and obligations, and any  ',
+            'cualquier1Btn': 'other aspects related to',
+            'procesoBtn': ' rental process.   ',
+			
+			'compraBtn': ' Property Purchase:',
+			'deseanBtn': ' •We offer a comprehensive  ',
+            'establecerseBtn': 'property purchase service ',
+            'ofrecemosBtn': 'for those looking to settle ',
+            'completoBtn': 'permanently in the  ',
+            'propiedades1Btn': 'Valencian Community. ',
+			
+            'inicialBtn': ' From initial search to ',
+            'cierreBtn': 'negotiation and property ',
+            'estamosBtn': 'purchase, we are dedicated ',
+            'idealBtn': ' to finding the ideal property ',
+            'cumplaBtn': ' that meets  our client s', 
+			'nuestros12Btn': ' expectations.',
+			
+		    'equipoBtn': 'Our team provides expert  ', 
+            'experto12Btn': 'advice on the local real  ',
+            'evaluaciónBtn': 'estate market, property    ',
+            'trámitesBtn': 'assessment, and legal and ',
+			'financierosBtn': 'financial procedures.',
+			'financieros888Btn': '',
+			
+			'garantizamosBtn': 'This ensures a stress-free  ', 
+            'estrésBtn': 'experience   throughout' , 
+			'proceso121Btn': ' the entire buying process.', 
+			
+			
+			
+			'reformaBtn': 'Property Renovation:',
+			'además1222Btn': ' •In addition to helping you ',
+            'tambiénBtn': 'find the perfect property, we ',
+            'erviciosBtn': ' offer comprehensive  ',
+            'cualquierBtn': 'renovation services to     ' ,
+			'gustosBtn': 'transform any space' ,
+            'necesidadesBtn': 'according to your needs and  ',
+            'gustosBtn': ' preferences.',
+			
+            'seaBtn': ' Whether a complete ',
+            'alizaciónBtn': 'renovation or a partial  ',
+            'profesionalesBtn': 'update, our team of skilled ',
+            'desdeBtn': ' professionals handles every ',
+            'hastaBtn': 'detail from initial design to ',
+            'proyectoBtn': 'execution and project   ',
+			'sea111Btn': 'completion. ',
+			'alización111Btn': '  ',
+           
+			
+            'brindarteBtn': ' We are committed to ',
+            'resultadosBtn': 'delivering exceptional ',
+            'superenBtn': 'results that exceed your   ',
+            'transformenBtn': 'expectations and turn your ',
+            'sueños1Btn': ' property into the  home of',
+			'sueños1666Btn': ' your dreams.',
+			
+			
+       
+			'galeria12Btn': 'Galeria   ',
+		    'estudioBtn': 'Studying in Menorca    ',
+			'apartamentoBtn': 'Apartment in Menorca    ',
+			'valenciBtn': 'Apartment in an old house in Valencia',
+			'reseñasBtn': 'Reseñas  ',
+		    'yyontactosBtn': 'Contactos ',
+            'prevButton': '←PREVIOUS',
+			'nextButton': 'NEXT →',
+			'solicitudBtn': 'Send request', 
+		  
+    },
+          'ru': {
+		   'sobre-nosotrosBtn': 'О нас',
+		   'proyectosBtn': 'Галерея',
+            'galeriaBtn':'Проекты ',
+            'sobre-nuestros-serviciosBtn':'О наших услугах',
+		    'contactosBtn': 'контакты',
+			'sobrenosotros1Btn': 'О нас',
+			'sobreno1Btn': 'Ваши консультанты с индивидуальным подходом в мире недвижимости. С более чем 10-летним опытом в сфере',
+		    'sobrnBtn': '  недвижимости: покупка, аренда, стейджинг, ремонт, аренда для отпуска. От аренды и покупки  ',
+		    'sobBtn': 'до услуг по ремонту, наша квалифицированная команда предоставит вам комплексное решение в сфере  ',
+		    'sob3Btn': 'недвижимости. Мы сопровождаем вас шаг за шагом на пути к вашему идеальному дому.',
+		   'sso1Btn': 'Мы специализируемся на предоставлении комплексных услуг кто хочет арендовать, купить или отремонтировать ',
+		   's99Btn': 'недвижимость в прекрасном регионе Валенсийского сообщества.',	
+			'logrosBtn': 'Достижения: более 200 довольных и счастливых клиентов с их недвижимостью.',
+	        'ventajasBtn': 'Преимущества',
+			'auydaBtn': ' ✓ Помощь в поиске жилья',
+            'enfoqueBtn': ' ✓Ориентация на персональные потребности',
+            'resoluciónBtn': ' ✓ Консультирование, связанное с процессом покупки',
+            'análisisBtn': ' ✓ Анализ доходности жилья в случае инвестиций',
+            'gestiónBtn': ' ✓ Управление процессом покупки и оплаты налогов',
+            'experienciaBtn': ' ✓ Опыт на рынке более 10 лет',
+            'serviciosBtn': ' ✓ Услуги на нескольких языках (английский, испанский, немецкий, русский)', 
+			'sobre13Btn': ' Об услугах', 
+            'ofreceBtn': '•Мы предлагаем практическую информацию и знания рынка, чтобы обеспечить вам',
+			'multidBtn': 'многогранный взгляд на отрасль. ',
+			'ayudaBtn': ' •Мы помогаем вам разрабатывать, управлять, инвестировать и планировать, чтобы создать  ',
+            'aspesBtn': 'решения и продумать все   аспекты, связанные с недвижимостью.',
+			
+			'alquilerBtn': 'Аренда недвижимости:',
+			'hacemosBtn': ' •Мы осуществляем поиск в ',
+	        'presupuestoBtn': 'соответствии с бюджетом, районом ',
+	        'deseadasBtn': 'и желаемыми  характеристиками. ',
+			
+			
+			'ademásBtn': ' Кроме того, мы предоставляем',  
+	        'expertoBtn': 'экспертные консультации по  ',
+ 	        'arrendamientoBtn': 'договорам аренды, правам и',  
+			'derechos777Btn': 'обязанностям арендатора, а',
+	        'obligacionesBtn': 'также любым другим аспектам,  ',
+            'cualquier1Btn': 'связанным с процессом  ',
+			'procesoBtn': 'аренды.',
+            
+			'compraBtn': ' Покупка недвижимости:',
+			'deseanBtn': ' •Для тех, кто хочет стать ',
+            'establecerseBtn': 'резидентом в Валенсийском ',
+            'ofrecemosBtn': 'сообществе, мы предлагаем ',
+            'completoBtn': 'полный сервис по покупке  ',
+            'propiedades1Btn': 'недвижимости. ',
+			
+            'inicialBtn': ' Мы занимаемся всем: от ',
+            'cierreBtn': 'начального поиска до ',
+            'estamosBtn': 'переговоров и закрытия  ',
+            'idealBtn': 'сделки, посвящая себя поиску   ',
+            'cumplaBtn': 'идеального объекта,  ', 
+			'nuestros12Btn': 'соответствующего ожиданиям  ',
+			'nuestros12Btn': 'наших клиентов.  ',
+			
+		    'equipoBtn': ' Наша команда предоставляет ', 
+            'experto12Btn': 'экспертное сопровождение по  ',
+            'evaluaciónBtn': 'рынку недвижимости, оценке     ',
+            'trámitesBtn': 'объектов, юридическим и     ',
+			'financierosBtn': 'финансовым процедурам,    ',
+			'financieros888Btn': 'обеспечивая   бесстрессовый ',
+			'financieros888Btn': 'опыт на каждом этапе процесса ',
+			'financieros888Btn': 'покупки.',
+			
+			
+			'garantizamosBtn': 'Таким образом, мы гарантируем  ', 
+            'estrésBtn': 'вам бесстрессовый опыт   ', 
+			'proceso121Btn': ' напротяжении всего', 
+			'duranteBtn': 'процесса покупки. ',
+			
+
+			'reformaBtn': 'Ремонт недвижимости:',
+			'además1222Btn': ' •Помимо помощи в поиске', 
+			'tambiénBtn': '  идеальной недвижимости, мы также',
+            'erviciosBtn': ' предлагаем полный спектр  услуг',
+            'cualquierBtn': '  по ремонту для преобразования  ',
+            'necesidadesBtn': ' любого  пространства в соответствии с ',
+            'gustosBtn': 'вашими потребностями и вкусами.',
+			
+			
+            'seaBtn': ' Независимо от того,нужен ли', 
+			'alizaciónBtn': 'полный ремонт или частичное',
+            'profesionalesBtn': 'обновление, наша команда ',
+            'desdeBtn': ' профессионалов берет на себя',
+            'hastaBtn': ' каждую деталь, начиная с ',
+            'proyectoBtn': 'первоначального дизайна и ',
+			 'sea111Btn': 'заканчивая выполнением и ',
+            'alización111Btn': 'завершением проекта.',
+			
+            'brindarteBtn': 'Мы гарантируем вам  ',
+            'resultadosBtn': 'результаты, превосходящие ',
+            'superenBtn': '  ваши ожидания, и ',
+            'transformenBtn':'превращение вашей ',
+            'sueños1Btn': 'недвижимости в дом вашей  ',
+			'sueños1666Btn': ' мечты.  ',
+            
+				
+			
+			'galeria12Btn': 'Галерея    ',
+		    'estudioBtn': 'Учеба на Менорке    ',
+			'apartamentoBtn': 'Квартира на Менорке   ',
+			'valenciBtn': 'Квартира в старом доме в Валенсии',
+			'reseñasBtn': 'Отзывы реальных клиентов  ',
+		    'yyontactosBtn': 'Контакты ',
+			'prevButton': '←ПРЕДЫДУЩИЙ',
+			'nextButton': 'СЛЕДУЮЩИЙ →',
+			'solicitudBtn': 'Отправить запрос', 
+		    },
+        };
+                         
+ // Apply translations to buttons
+    Object.keys(translations[language]).forEach(elementId => {
+        const element = document.getElementById(elementId);
+        if (element) {
+            element.innerText = translations[language][elementId];
+        }
+    });
+}
+
+  function handleClick(sectionId) {
+            // Удаляем класс active у всех кнопок
+            document.querySelectorAll('.menu button').forEach(button => button.classList.remove('active'));
+            // Добавляем класс active к нажатой кнопке
+            document.getElementById(sectionId + 'Btn').classList.add('active');
+            
+            if (sectionId === 'galeria') {
+                // Переход на другую страницу
+                window.location.href = 'index2.html';
+            } else {
+                // Прокрутка к секции
+                document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+		
+	
+       
+   // Задаем массив с отзывами
+        const testimonials = [
+            "PAULA: Me gestionaron un trámite de alquiler, y gracias a su maravillosa gestión conseguí agilizar el proceso de documentación para obtener el inmueble en el tiempo estimado. Os recomiendo sus servicios.",
+            "ERNESTO: Muy contento con la reforma realizada. Me cambiaron mi vivienda por completo y ahora la siento más habitable. Los acabados han sido excelentes.",
+            "ALICIA: Ricardo half uns, eine passende Wohnung zu finden. Ohne seine Unterstützung wäre es für uns sehr schwierig gewesen, da wir kein Spanisch sprechen. Er war sehr aufmerksam und geduldig. Wir empfehlen seinen Service auf jeden Fall weiter.",
+            "Анна М.: Pикардо и Ксения помогли найти наш дом в Валенсии. Она поддерживали нас на всех этапах процесса: открытие счета, получение NIE, поиск квартир, общение с агенствами, подписание договора купли - продажи. Весь процесс занял около двух месяцев. Очень довольны их сервисом, рекомендуем своим друзьям и знакомым.",
+            "Борис и Елена: нам помогли найти квартиру с ограниченным бюджетом в том районе, который мы хотели. Рикардо был очень внимательным к нашим пожеланиям, коммуникация была очень простая, рекомендуем его как надежного агента по недвижимости в Валенсии.",
+            "Janne M: Ricardo assisted me with purchasing an investment property in Valencia's El Carmen district. His expertise in buying and refurbishing old houses was invaluable, providing numerous tips to enhance the apartment's appeal and maximize rental income. Overall, it was an excellent experience with top-notch service and communication."
+        ];
+
+        let currentTestimonialIndex = 0;
+        const testimonialText = document.getElementById("testimonialText");
+
+        // Функция для отображения текущего отзыва
+        function displayTestimonial() {
+            testimonialText.textContent = testimonials[currentTestimonialIndex];
+        }
+
+        // Функция для переключения на предыдущий отзыв
+        function prevTestimonial() {
+            currentTestimonialIndex--;
+            if (currentTestimonialIndex < 0) {
+                currentTestimonialIndex = testimonials.length - 1;
+            }
+            displayTestimonial();
+        }
+
+        // Функция для переключения на следующий отзыв
+        function nextTestimonial() {
+            currentTestimonialIndex++;
+            if (currentTestimonialIndex >= testimonials.length) {
+                currentTestimonialIndex = 0;
+            }
+            displayTestimonial();
+        }
+
+        // Отображаем первый отзыв при загрузке страницы
+        displayTestimonial();
+		
+		
+	
+let currentImageIndex = 0;
+        const images = document.querySelectorAll('.gallery-section .image-container');
+
+        function showImage(index) {
+            images.forEach((image, i) => {
+                if (i === index) {
+                    image.style.display = 'block';
+                } else {
+                    image.style.display = 'none';
+                }
+            });
+        }
+
+        function prevImage() {
+            currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+            showImage(currentImageIndex);
+        }
+
+        function nextImage() {
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            showImage(currentImageIndex);
+        }
+
+        // Показываем первое изображение при загрузке страницы
+        showImage(0);
+
+  // Toggle dropdown visibility
+        document.querySelector('.dropdown .button').addEventListener('click', function(event) {
+            event.preventDefault();
+            var dropdownContent = document.querySelector('.dropdown .dropdown-content');
+            dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+        });
+
+        // Close the dropdown if clicked outside
+        window.onclick = function(event) {
+            if (!event.target.matches('.button')) {
+                var dropdowns = document.querySelectorAll('.dropdown-content');
+                dropdowns.forEach(function(dropdown) {
+                    if (dropdown.style.display === 'block') {
+                        dropdown.style.display = 'none';
+                    }
+                });
+            }
+        }
+
+        // Translation functions
+        function translateToSpanish() {
+            // Add translation code here
+        }
+
+        function translateToEnglish() {
+            // Add translation code here
+        }
+
+        function translateToRussian() {
+            // Add translation code here
+        }
+ // Функция для звонка
+        
+    function sendEmail() {
+        window.open("mailto:info@palaciosproperties.com", "_blank");
+    }
+	function callUs() {
+    window.location.href = "tel:+34699601817";
+}
+   // Функция для вызова WhatsApp с помощью ссылки
+        function callWhatsApp() {
+            // Открываем ссылку для WhatsApp с номером телефона
+            window.open("https://api.whatsapp.com/send?phone=34699601817", "_blank");
+        }
+		 // Функция для открытия Telegram с помощью ссылки
+        function openTelegram() {
+            // Открываем ссылку для Telegram с указанным номером телефона
+            window.open("https://telegram.me/+34699601817", "_blank");
+        }
+		
+	  const blocks = document.querySelectorAll('.footer-text-block');
+        let currentIndex = 0;
+
+        function showCurrentBlock() {
+            blocks.forEach((block, index) => {
+                if (index === currentIndex) {
+                    block.style.display = 'block';
+                } else {
+                    block.style.display = 'none';
+                }
+            });
+        }
+
+        function nextBlock() {
+            currentIndex = (currentIndex + 1) % blocks.length;
+            showCurrentBlock();
+        }
+
+        function prevBlock() {
+            currentIndex = (currentIndex - 1 + blocks.length) % blocks.length;
+            showCurrentBlock();
+        }
+
+        // Показываем первый блок по умолчанию
+        showCurrentBlock();
+		
+		
+		
+		
+
+		
+		
+    </script>
+</body>
+</html>
